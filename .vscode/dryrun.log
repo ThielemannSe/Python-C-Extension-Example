@@ -1,7 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory `/Users/basti/Documents/cse/sem3/beleg/example_python_ext'
-g++-11 -c -fPIC -O3 -fopenmp -I/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/include/python3.9 src/main.cpp -o tmp/main.o
- 
-g++-11 -shared -fPIC -L/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/ -undefined dynamic_lookup -lgomp tmp/main.o -o build/ -L/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/lib/ -undefined dynamic_lookup
-make: Leaving directory `/Users/basti/Documents/cse/sem3/beleg/example_python_ext'
- 
