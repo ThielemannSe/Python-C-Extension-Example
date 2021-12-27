@@ -1,3 +1,5 @@
-import example_module
 
-print('Works') 
+try:
+    import example_module
+except:
+    Exception(ImportError, "Could not import 'example_module'")
